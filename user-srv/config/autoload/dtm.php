@@ -11,7 +11,7 @@ use DtmClient\Constants\DbType;
 
 return [
     'protocol' => Protocol::HTTP,
-    'server' => '127.0.0.1',
+    'server' => env('DTM_HOST'),
     'port' => [
         'http' => 36789,
         'grpc' => 36790,
